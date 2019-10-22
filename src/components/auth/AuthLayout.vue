@@ -42,13 +42,13 @@ export default {
   data () {
     return {
       selectedTabIndex: 0,
-      tabTitles: ['login', 'createNewAccount'],
+      tabTitles: ['login', 'createNewAccount'], // Nombre identificador para los dos tabs.
     }
   },
   computed: {
     tabIndex: {
       set (tabIndex) {
-        this.$router.push({ name: tabs[tabIndex] })
+        this.$router.push({ name: tabs[tabIndex] }) // Esto setea el valor del tab seleccionado. 1 o 0 en este caso
       },
       get () {
         return tabs.indexOf(this.$route.name)
@@ -65,7 +65,7 @@ export default {
 
   &__card {
     width: 100%;
-    max-width: 600px;
+    max-width: 600px; //Cambia el tamaño de la carta de loggeo en auth/login
   }
 
   &__options {

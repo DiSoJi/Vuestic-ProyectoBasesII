@@ -29,7 +29,7 @@ export default {
       if (!this.email) {
         this.emailErrors = ['Email is required']
       } else {
-        this.$router.push('/')
+        this.$router.push('/') // Esto redirige a la pagina default. Con push se decide a que pagina se redigire
       }
     },
   },

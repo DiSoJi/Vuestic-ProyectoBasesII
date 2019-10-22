@@ -21,7 +21,7 @@ export default new Router({
     ...demoRoutes,
     {
       path: '*',
-      redirect: { name: 'dashboard' },
+      redirect: { name: 'login' }, // Este valor de name decide que path es el que se carga por default
     },
     {
       path: '/auth',
@@ -86,7 +86,7 @@ export default new Router({
           default: true,
         },
         {
-          name: 'statistics',
+          name: 'statistics', // Estos tienen hijos dentro de los hijos porque no se abren en otra pestaña. Estos son por los desplegables de la izquierda
           path: 'statistics',
           component: EmptyParentComponent,
           children: [

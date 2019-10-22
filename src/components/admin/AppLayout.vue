@@ -22,6 +22,7 @@
 </template>
 
 <script>
+// Estos imports son para obtener los elementos que ahi dicen
 import VaPageLayout from './VaPageLayout'
 import AppNavbar from './app-navbar/AppNavbar'
 import AppSidebar from './app-sidebar/AppSidebar'

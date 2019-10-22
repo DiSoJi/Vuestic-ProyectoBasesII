@@ -1,4 +1,4 @@
-export const navigationRoutes = {
+export const navigationRoutes = { // Estas rutas deben ser cambiadas para quitar sus links.
   root: {
     name: '/',
     displayName: 'navigationRoutes.home',

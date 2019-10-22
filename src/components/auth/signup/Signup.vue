@@ -65,6 +65,7 @@ export default {
   },
   computed: {
     formReady () {
+      // Aqui va la comprobacion de si se loggeo correctamente
       return !(this.emailErrors.length || this.passwordErrors.length || this.agreedToTermsErrors.length)
     },
   },
